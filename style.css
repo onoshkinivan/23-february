@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper {
+    background-image: url(/23\ february.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+img.soldate {
+    height: 700px;
+    width: 500px;
+    position: relative;
+}
+
+.soldate.active {
+    animation: 5s linear 0s normal none infinite running soldate;
+}
+
+@keyframes soldate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+img.nagp {
+    width: 600px;
+    height: 600px;
+}
